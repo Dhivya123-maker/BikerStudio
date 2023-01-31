@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bikerstudio">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE " />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name = "android.permission.VIBRATE" />
+    <uses-permission android:name = "android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bikerstudio_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/bikerstudio_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bikerstudio"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".About"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".FragmentBike"
+            android:exported="true"
+            tools:ignore="Instantiatable"
+            android:screenOrientation="portrait"/>
+        <activity
+        android:name=".Fragment_Profile"
+        android:exported="true"
+        tools:ignore="Instantiatable"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FragmentHome"
+            android:exported="true"
+            tools:ignore="Instantiatable"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FragmentOrder"
+            android:exported="true"
+            tools:ignore="Instantiatable"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".Profile"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name=".Order_Cfrm"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Bottom_navigation"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Notification"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Emergency"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Forget"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Accessories"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Password"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".OTP"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".order_conformation"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".booking"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".bike_view"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Bike_add"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".history"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".home"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Register"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".login"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".header"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

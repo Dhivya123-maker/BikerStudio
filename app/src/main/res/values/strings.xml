@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bikerstudio</string>
+    <string name="navigation_drawer_close" />
+    <string name="navigation_drawer_open" />
+    <string-array name="vehicle_type">
+        <item>Select your vehicle</item>
+        <item>Scooter</item>
+        <item>Bike</item>
+        <item>Superbike</item>
+    </string-array>
+
+    <string-array name="From_date">
+        <item>Choose date</item>
+        <item>Scooter</item>
+        <item>Bike</item>
+        <item>Superbike</item>
+    </string-array>
+
+
+    <string-array name="To_date">
+        <item>Choose date</item>
+        <item>Scooter</item>
+        <item>Bike</item>
+        <item>Superbike</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

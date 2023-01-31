@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mHome"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:id="@+id/mBike"
+        android:title="Bike"
+        android:icon="@drawable/motorbike"/>
+    <item android:id="@+id/mplaceholder"
+        android:title=""
+        />
+
+    <item android:id="@+id/mOrders"
+        android:title="Orders"
+        android:icon="@drawable/list2"
+        />
+
+
+    <item android:id="@+id/mPerson"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+
+
+
+</menu>

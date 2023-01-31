@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".login">
+
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="820dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-180dp"
+        android:background="@drawable/layout_design"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="View profile"
+                android:textColor="#a30202"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Username"
+                android:textColor="#a30202"
+                android:textSize="18dp"
+
+                >
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="xxxxx"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+               >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Phone number"
+                android:textColor="#a30202"
+                android:textSize="18dp"
+              >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="123456789"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+               >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_baseline_mail_24"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="mail address"
+                android:textSize="18dp"
+                android:textColor="#a30202">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/mail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="xxxxxx@gmail.com"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+              >
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

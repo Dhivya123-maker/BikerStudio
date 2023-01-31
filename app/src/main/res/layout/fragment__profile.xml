@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/layout_design"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="View profile"
+                android:textColor="#a30202"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Username"
+                android:textColor="#a30202"
+                android:textSize="18dp"
+
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="xxxxxx"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_user_name"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter your name"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Phone number"
+                android:textColor="#a30202"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="123456789"
+                    android:maxLength="10"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_contact"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_phone_in_talk_24"
+                    android:drawablePadding="10dp"
+                    android:inputType="number"
+                    android:hint="Enter your number"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Mail address"
+                android:textColor="#a30202"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mail_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:drawableLeft="@drawable/ic_baseline_mail_24"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="xxxxxx@gmail.com"
+                    android:textColor="@color/black">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/et_mail_address"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/black"
+                    android:drawableLeft="@drawable/ic_baseline_mail_24"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter your mail address"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_btn"
+                android:src="@drawable/ic_baseline_edit_note_24"
+                >
+
+            </ImageButton>
+
+
+            <TextView
+                android:id="@+id/save_button"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background="@drawable/round_btn"
+                android:text="save"
+                android:visibility="gone"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

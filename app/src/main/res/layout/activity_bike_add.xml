@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bike_add"
+    android:background="@color/black">
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar1"
+
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Tell as about your bike"
+        android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Please tell about your bike. So that we can personalize your onboarding experince"
+            android:textColor="#FFFFFF" />
+
+
+
+<ScrollView
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:layout_below="@+id/textView2">
+
+
+<LinearLayout
+    android:id="@+id/bike_add_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/v_type"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Vehicle type"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_black"
+        android:layout_marginTop="10dp"
+        android:textColor="#A80303"
+        >
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_design_2"
+        >
+
+    </Spinner>
+
+
+
+    <TextView
+        android:id="@+id/textView_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Make"
+        android:textColor="#A80303" />
+<!--    <Spinner-->
+<!--        android:id="@+id/bike_name_spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:background="@drawable/button_design_2"-->
+<!--        >-->
+
+<!--    </Spinner>-->
+
+    <TextView
+        android:id="@+id/bike_name_spinnner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select your bike name"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+        android:background="@drawable/button_design_2"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_black"
+        />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/bike_name"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:background="@drawable/button_design_2"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="@font/roboto_black"-->
+<!--        android:hint="Bike Name"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="14dp" />-->
+
+
+
+    <TextView
+        android:id="@+id/textView_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Model"
+        android:textColor="#A80303" />
+
+    <TextView
+        android:id="@+id/bike_model_spinnner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select your bike model"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+        android:background="@drawable/button_design_2"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_black"
+        />
+
+<!--    <EditText-->
+
+<!--        android:id="@+id/Bike_model"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:background="@drawable/button_design_2"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="@font/roboto_black"-->
+<!--        android:hint="Bike Model"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="14dp" />-->
+
+
+    <TextView
+        android:id="@+id/textView_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Version"
+        android:textColor="#A80303"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/bike_version_spinnner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Select your bike version"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+        android:background="@drawable/button_design_2"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_black"
+        />
+    <TextView
+        android:id="@+id/textView_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Bike Number"
+        android:textColor="#A80303" />
+
+    <EditText
+        android:id="@+id/Bike_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button_design_2"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:hint="Enter your bike number"
+        android:paddingStart="15dp"
+        android:maxLength="10"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+
+    <!--    <EditText-->
+<!--        android:id="@+id/Bike_version"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:background="@drawable/button_design_2"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:ems="10"-->
+<!--        android:fontFamily="@font/roboto_black"-->
+<!--        android:hint="Bike Version"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:padding="5dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="14dp"/>-->
+
+
+    <TextView
+        android:id="@+id/textView_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Kilometer"
+        android:textColor="#A80303" />
+
+    <EditText
+        android:id="@+id/Bike_kilometer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/button_design_2"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_black"
+        android:hint="Enter your bike kilometer"
+        android:inputType="number"
+        android:maxLength="5"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:paddingStart="15dp"
+        android:textSize="14dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/textView_7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:fontFamily="@font/roboto_black"-->
+<!--        android:text="Bike insurance Number"-->
+<!--        android:textColor="#A80303" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/Bike_insurance"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="30dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:background="@drawable/button_design_2"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:padding="5dp"-->
+<!--        android:hint="Bike insurance Number"-->
+<!--        android:textSize="14dp"-->
+<!--        android:fontFamily="@font/roboto_black"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/textView_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Year"
+        android:textColor="#A80303" />
+
+    <EditText
+        android:id="@+id/Year"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_design_2"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:maxLength="4"
+        android:hint="Enter your bike year"
+        android:textSize="14dp"
+        android:paddingStart="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:layout_marginBottom="100dp"
+        />
+
+
+    <LinearLayout
+        android:id="@id/bike_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/TextDate"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:text="From date"-->
+<!--            android:textSize="14dp"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:textColor="#A80303"-->
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/TextDate2"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:text="To date"-->
+<!--            android:textSize="14dp"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:textColor="#A80303"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@id/bike_12"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/editTextDate"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="30dp"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="date"-->
+<!--            android:padding="5dp"-->
+<!--            android:hint="dd/mm/yyyy"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:background="@drawable/button_design_2"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            />-->
+
+
+<!--                <EditText-->
+<!--            android:id="@+id/editTextDate2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:layout_marginEnd="30dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="date"-->
+<!--            android:padding="5dp"-->
+<!--            android:hint="dd/mm/yyyy"-->
+<!--            android:textSize="14dp"-->
+<!--            android:textColor="#ffffff"-->
+<!--            android:background="@drawable/button_design_2"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            />-->
+
+
+
+<!--        <Button-->
+<!--            android:id="@+id/tv_dob"-->
+<!--            style="?android:spinnerStyle"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:gravity="bottom"-->
+<!--            android:hint="Enter the DOB"-->
+<!--            app:backgroundTint="#808080"-->
+<!--            android:background="#808080"-->
+<!--            android:lastBaselineToBottomHeight="20dp"-->
+<!--            android:onClick="openDatePicker"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:textSize="14dp" />-->
+
+<!--        -->
+
+<!--        <Button-->
+<!--            android:id="@+id/tv_dob1"-->
+<!--            style="?android:spinnerStyle"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:gravity="bottom"-->
+<!--            android:hint="Enter the DOB"-->
+<!--            android:lastBaselineToBottomHeight="20dp"-->
+<!--            android:onClick="openDatePicker"-->
+<!--            android:background="@drawable/button_design_2"-->
+<!--            android:backgroundTint="#808080"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:textSize="14dp" />-->
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_1"
+        android:fontFamily="@font/roboto_black"
+        android:text="ADD DETAILS"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

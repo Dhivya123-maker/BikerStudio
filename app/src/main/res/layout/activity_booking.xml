@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".booking"
+    android:background="@color/black">
+
+
+
+        <include
+            android:id="@+id/toolbar1"
+            layout="@layout/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <!--    <RelativeLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+<!--                android:layout_below="@id/toolbar1">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_services"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+             >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/white"
+            android:elevation="20dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:backgroundTint="#A30202"
+            app:tint="#A30202"
+
+            />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/adding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_1"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp" />
+
+
+
+    </LinearLayout>
+
+
+<!--    </RelativeLayout>-->
